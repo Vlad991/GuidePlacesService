@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: kzm_vlad
+    password: 123root@
+    driverClassName: com.mysql.cj.jdbc.Driver
+    driverDialect: org.hibernate.dialect.MySQLDialect
+    url: jdbc:mysql://localhost:3306/guide_places_db?verifyServerCertificate=false&useSSL=false&allowPublicKeyRetrieval=true&requireSSL=false&useLegacyDatetimeCode=false&amp&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+server:
+  port: 8087
+
+logging:
+  level:
+    root: INFO
