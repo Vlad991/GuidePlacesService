@@ -20,7 +20,7 @@ public class Address {
     private Long id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "place_id")
+    @JoinColumn(name = "place_id", nullable = false)
     private Place place;
 
     @ManyToOne
@@ -35,12 +35,12 @@ public class Address {
     @JoinColumn(name = "street_id", nullable = false)
     private Street street;
 
-    @Column(name = "postcode")
+    @Column(name = "postcode", nullable = false)
     private Integer postcode;
 
-    @Column(name = "latitude")
+    @Column(name = "latitude", nullable = false)
     private Float latitude;
 
-    @Column(name = "logitude")
+    @Column(name = "logitude", nullable = false)
     private Float longitude;
 }

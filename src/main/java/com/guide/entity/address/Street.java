@@ -22,12 +22,12 @@ public class Street {
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "latitude")
+    @Column(name = "latitude", nullable = false)
     private Float latitude;
 
-    @Column(name = "logitude")
+    @Column(name = "logitude", nullable = false)
     private Float longitude;
 }

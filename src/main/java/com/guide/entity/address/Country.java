@@ -19,13 +19,13 @@ public class Country {
     @GenericGenerator(name = "increment", strategy = "increment")
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "latitude")
+    @Column(name = "latitude", nullable = false)
     private Float latitude;
 
-    @Column(name = "logitude")
+    @Column(name = "logitude", nullable = false)
     private Float longitude;
 
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
