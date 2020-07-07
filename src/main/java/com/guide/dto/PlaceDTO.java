@@ -33,5 +33,5 @@ public class PlaceDTO {
 
 //    private List<PlaceAttributeValue> placeAttributeValueList;
 
-    private List<CategoryDTO> categoryList;
+//    private List<CategoryDTO> categoryList;
 }

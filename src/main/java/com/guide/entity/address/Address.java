@@ -41,6 +41,6 @@ public class Address {
     @Column(name = "latitude", nullable = false)
     private Float latitude;
 
-    @Column(name = "logitude", nullable = false)
+    @Column(name = "longitude", nullable = false)
     private Float longitude;
 }

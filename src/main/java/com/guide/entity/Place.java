@@ -39,7 +39,15 @@ public class Place {
     @OneToMany(mappedBy = "place", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<PlaceFilterValue> placeFilterValueList;
 
-//    @OneToMany(mappedBy = "place", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    public Place(Long id, String name, String shortDescription, String description, Address address) {
+        this.id = id;
+        this.name = name;
+        this.shortDescription = shortDescription;
+        this.description = description;
+        this.address = address;
+    }
+
+    //    @OneToMany(mappedBy = "place", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 //    private List<PlaceAttributeValue> placeAttributeValueList;
 
     @ManyToMany(mappedBy = "placeList", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
